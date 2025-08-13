@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left Image with Zoom Animation */
+.login-left {
+  width: 65%;
+  overflow: hidden;
+}
+
+.animated-image {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  justify-content: center;
+  align-self: center;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-left: 80px;
+  /* animation: zoomInOut 5s ease-in-out infinite; */
+}
+
+/* @keyframes zoomInOut {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+} */
+
+/* Right Form */
+.login-right {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+}
+
+.login-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+}
+
+.login-card h2 {
+  margin: 0;
+  font-size: 26px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Floating Label Input */
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 0px 12px 32px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-group label {
+  position: absolute;
+  left: 35px;
+  top: 12px;
+  color: #888;
+  font-size: 14px;
+  transition: 0.3s ease all;
+  pointer-events: none;
+}
+
+.input-group.active label,
+.input-group input:focus + label {
+  top: -8px;
+  left: 30px;
+  background: #fff;
+  padding: 0 5px;
+  font-size: 12px;
+  color: #a435f0;
+}
+
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  font-size: 18px;
+  color: #888;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  font-size: 18px;
+  color: #888;
+  cursor: pointer;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #a435f0;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #902cd8;
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.signup-text a {
+  color: #a435f0;
+  text-decoration: none;
+}
